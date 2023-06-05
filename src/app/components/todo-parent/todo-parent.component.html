@@ -1,0 +1,15 @@
+<div class="parent-div">
+    <h1>Todo App</h1>
+    <div class="todo-parent">
+        <form #todoForm="ngForm" class="upper-box">
+            <textarea class="textarea" placeholder="type here..." [(ngModel)]="todo" ngModel name="todo"></textarea>
+            <button class="btn" (click)="addTodo()">Add</button>
+        </form>
+        <ul class="lower-box">
+                <app-todos [(todos)]="todos"></app-todos>
+        </ul>
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>

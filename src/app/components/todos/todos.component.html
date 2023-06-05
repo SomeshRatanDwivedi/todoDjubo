@@ -1,0 +1,20 @@
+<h1 class="no-todo" *ngIf="todos && todos.length<=0">NO TODOS TO SHOW</h1>
+
+
+<li class="todo" *ngFor="let todo of todos; let i=index">
+    <form *ngIf="editTodoIndex==i" #todoForm="ngForm" class="upper-box">
+        <textarea [(ngModel)]="editTodoText" ngModel name="todo" class="textarea" placeholder="type here..."  ></textarea>
+        <button type="button" class="btn" (click)="saveTodo()">SAVE</button>
+    </form>
+    <p *ngIf="editTodoIndex!==i">
+        {{todo}}
+    </p>
+
+    <div>
+        <button class="btn" (click)="deleteTodo(i)">DELETE</button>
+        <button *ngIf="editTodoIndex!==i" class="btn" (click)="handleEditClick(todo, i)">EDIT</button>
+    </div>
+ 
+</li>
+
+

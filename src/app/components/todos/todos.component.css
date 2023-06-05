@@ -1,0 +1,24 @@
+.todo{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.todo button{
+    margin-left: 10px;
+}
+
+.no-todo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.todo form{
+    display: flex;
+        align-items: center;
+}

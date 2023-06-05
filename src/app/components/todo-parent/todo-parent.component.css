@@ -1,0 +1,32 @@
+.parent-div {
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding-top: 80px;
+
+}
+
+.parent-div> h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-parent {
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.upper-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.upper-box textarea:focus {
+    outline: none;
+}
+
+
+
